@@ -12,6 +12,7 @@ const createWindow = (): void => {
     webPreferences: {
       contextIsolation: true
     },
+    frame:false,
     height: 600,
     width: 800,
   });

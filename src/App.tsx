@@ -1,11 +1,12 @@
 import { hot } from 'react-hot-loader';
 import * as React from 'react';
-import  './index.css'
+import 'antd/dist/antd.min.css'
+import {Card} from 'antd'
 
 
 class App extends React.Component{
     render(){
-        return <div>Hello from React!</div>
+        return <Card title="Cart deneme"><p>Deneme içerik kart içeriği</p></Card>
     }
 }
 
