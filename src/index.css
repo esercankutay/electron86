@@ -1,7 +1,35 @@
 body {
   padding: 0px;
   margin: 0px;
-  display: flex;
-  justify-content: center;
+  display: block;
+  background-color: #fff;
+}
+#titleBar {
+  height: 2.2rem;
+  position: relative;
+  background-color: #2c2b2a;
+  -webkit-app-region: drag;
+}
+#appTitle {
+  position: absolute;
+  left: 50vw;
+}
+#appTitle:nth-child(1) {
+  top: 5px;
+  color: #fff;
+  font-family: "Sans";
+  font-size: 0.9rem;
+}
+#buttonGroup {
+  position: absolute;
+  display: block;
+  right: 0px;
+  -webkit-app-region: no-drag;
+  user-select: none;
+}
+
+#btn {
+  position: absolute;
+  display: block;
   background-color: #fff;
 }
