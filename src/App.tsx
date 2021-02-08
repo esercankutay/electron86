@@ -4,13 +4,17 @@ import "antd/dist/antd.min.css";
 import { Card } from "antd";
 import TitleBar from "./Components/Titlebar/TitleBar";
 import Memory from "./Components/Memory/Memory";
+import Editor from "./Components/Editor/Editor";
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div id="main-container">
         <TitleBar />
-        <Memory />
+        <div id="component-container">
+          <Memory />
+          <Editor />
+        </div>
       </div>
     );
   }

@@ -1,15 +1,13 @@
 import React from "react";
-import { DownOutlined, UpOutlined, CloseOutlined } from "@ant-design/icons";
+import { LineOutlined, BorderOutlined, CloseOutlined } from "@ant-design/icons";
 
 export default function TitleBar() {
   return (
     <div id="titleBar">
       <div id="appTitle">Electron86</div>
-      <div id="buttonGroup">
-        <DownOutlined style={{ color: "#fff", margin: "0.4rem" }} />
-        <UpOutlined style={{ color: "#fff", margin: "0.4rem" }} />
-        <CloseOutlined style={{ color: "#fff", margin: "0.4rem" }} />
-      </div>
+      <CloseOutlined style={{ color: "#fff", marginInline: "0.5rem" }} />
+      <BorderOutlined style={{ color: "#fff", marginInline: "0.5rem" }} />
+      <LineOutlined style={{ color: "#fff", marginInline: "0.5rem" }} />
     </div>
   );
 }

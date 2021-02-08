@@ -1,35 +1,32 @@
 body {
   padding: 0px;
   margin: 0px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
 }
 #titleBar {
   height: 2.2rem;
-  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   background-color: #2c2b2a;
   -webkit-app-region: drag;
 }
 #appTitle {
   position: absolute;
   left: 50vw;
-}
-#appTitle:nth-child(1) {
   top: 5px;
   color: #fff;
-  font-family: "Sans";
-  font-size: 0.9rem;
-}
-#buttonGroup {
-  position: absolute;
-  display: block;
-  right: 0px;
-  -webkit-app-region: no-drag;
-  user-select: none;
+  font-family: "Cantarell", "Sans-Serif";
 }
 
-#btn {
-  position: absolute;
-  display: block;
-  background-color: #fff;
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#component-container {
+  display: flex;
+  justify-content: space-around;
 }
