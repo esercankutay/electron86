@@ -15,11 +15,11 @@ const createWindow = (): void => {
     },
     frame: false,
 
-    height: 800,
-    width: 1200,
+    minHeight: 800,
+    minWidth: 1200,
   });
 
-  mainWindow.setResizable(false);
+  mainWindow.setResizable(true);
 
   // and load the index.html of the app.
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);

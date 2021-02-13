@@ -23,10 +23,11 @@ body {
 
 #main-container {
   display: flex;
+  height: 100vh;
   flex-direction: column;
 }
 
 #component-container {
   display: flex;
-  justify-content: space-around;
+  flex-grow: 8;
 }

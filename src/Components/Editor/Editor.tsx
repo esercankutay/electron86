@@ -1,9 +1,6 @@
-import React from 'react'
+import React from "react";
+import "./Editor.css";
 
 export default function Editor() {
-    return (
-        <div>
-            editor
-        </div>
-    )
+  return <div className="editor">Editor text</div>;
 }
